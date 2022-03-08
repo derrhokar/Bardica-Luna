@@ -5,7 +5,7 @@
         background-position: 0;
         animation: shine 3s infinite linear;
         background-clip: text;
-        -webkit-text-fill-color: transparent
+        -webkit-text-fill-color: transparent;
     }
 
     @keyframes shine {
@@ -20,9 +20,56 @@
         100% {
             background-position: 260px
         }
-
+        
     }
-
+    @include phoneLarge{
+        @keyframes shine {
+            0% {
+                background-position: 0px
+            }
+    
+            60% {
+                background-position: 210px
+            }
+    
+            100% {
+                background-position: 290px
+            }
+            
+        }
+    }
+    @include tablet{
+        @keyframes shine {
+            0% {
+                background-position: 0px
+            }
+    
+            60% {
+                background-position: 230px
+            }
+    
+            100% {
+                background-position: 340px
+            }
+            
+        }
+    }
+    @include desktop{
+        @keyframes shine {
+            0% {
+                background-position: 0px
+            }
+    
+            60% {
+                background-position: 300px
+            }
+    
+            100% {
+                background-position: 500px
+            }
+            
+        }
+    }
     h3 {
         font-size: 1em;
         text-align: center;
