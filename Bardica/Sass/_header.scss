@@ -14,7 +14,8 @@
 .logo {
     height: 24px;
     width: auto;
-    @include tablet{
+
+    @include tablet {
         height: 40px;
     }
 }
@@ -30,10 +31,12 @@
     transition: 0.5s;
     width: 4rem;
     border-radius: 40px;
-    &:hover{
+
+    &:hover {
         color: map-get($colores, starkWhite)
     }
-    @include phoneLarge{
+
+    @include phoneLarge {
         font-size: 18px;
         width: 60px
     }
@@ -53,36 +56,40 @@
             opacity: 0.8;
         }
     }
+
     i {
         font-size: 22px;
         color: map-get($colores, starkWhite);
     }
 }
 
-@include desktop{
-  .navbarContainer input{
+@include desktop {
+    .navbarContainer input {
         display: none;
     }
-    .brand{
+
+    .brand {
         order: 1;
     }
-    .menuItems{
+
+    .menuItems {
         display: flex;
         order: 2;
         width: 400px;
         justify-content: space-between;
-        @include desktop{
-         width: 600px;           
+
+        @include desktop {
+            width: 600px;
         }
     }
-    #bar{
+
+    #bar {
         order: 3;
-    
+
     }
-    #connectivity{
+
+    #connectivity {
         order: 4;
     }
-    
+
 }
-  
-  

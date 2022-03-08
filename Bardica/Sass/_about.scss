@@ -1,69 +1,81 @@
-.aboutMain{
-    h1{
+.aboutMain {
+    h1 {
         color: map-get($colores, starkWhite);
-        background: linear-gradient(to right, #fff 0,#030303, #fff 20%);
+        background: linear-gradient(to right, #fff 0, #030303, #fff 20%);
         background-position: 0;
         animation: shine 3s infinite linear;
         background-clip: text;
         -webkit-text-fill-color: transparent
-}
-@keyframes shine {
-    0%{
-        background-position: 0px
     }
-    
-  60%{
-    background-position: 180px
-  }
-    
-  100%{
-    background-position: 260px
-  }
-    
+
+    @keyframes shine {
+        0% {
+            background-position: 0px
+        }
+
+        60% {
+            background-position: 180px
+        }
+
+        100% {
+            background-position: 260px
+        }
+
+    }
+
+    h3 {
+        font-size: 1em;
+        text-align: center;
+    }
 }
-h3{
-    font-size: 1em;   
-    text-align: center;
-}
-}
-.quoteContent{
-    img{
+
+.quoteContent {
+    img {
         width: 100%;
     }
-    
+
 }
-.paragraph{
+
+.paragraph {
     display: flex;
     font-size: 10px;
-    @include phoneLarge{
+
+    @include phoneLarge {
         font-size: .8em;
     }
-    @include desktop{
+
+    @include desktop {
         font-size: 1em;
     }
-    
+
 }
-.imageContainer{
-    p{
+
+.imageContainer {
+    p {
         margin-top: 1em;
         text-align: center;
         font-size: 8px;
-        @include tablet{
+
+        @include tablet {
             font-size: 12px;
         }
-        @include desktop{
+
+        @include desktop {
             font-size: 16px;
         }
     }
-    img{
-        margin-left:.5em;
+
+    img {
+        margin-left: .5em;
         width: 50%;
         height: 200px;
-        @include tablet{
+
+        @include tablet {
             width: 300px;
             margin-left: 1em
         }
-        @include desktop{
+
+        @include desktop {
             width: 350px;
         }
     }

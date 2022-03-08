@@ -10,7 +10,9 @@ $merienda: 'Merienda',
 bold;
 $courgette: 'Courgette',
 cursive;
-$pacifico: 'Pacifico', cursive;
+$pacifico: 'Pacifico',
+cursive;
+
 //Mixin con los media query
 @mixin phoneLarge {
     @media only screen and (min-width: 480px) {
@@ -35,13 +37,15 @@ $pacifico: 'Pacifico', cursive;
     display: flex;
     align-items: center;
 }
+
 //Mixin para ajustar el body con respecto a los elementos fijos
 @mixin fixedMargin($top, $bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
 }
+
 //Mixin para centrar elementos
-@mixin container($width, $padding){
+@mixin container($width, $padding) {
     max-width: $width;
     padding: $padding;
 }

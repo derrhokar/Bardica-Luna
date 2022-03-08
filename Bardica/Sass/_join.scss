@@ -2,14 +2,15 @@
   margin-top: 1em;
   display: flex;
   flex-direction: column;
- 
+
 }
 
 .joinText {
   color: map-get($colores, starkWhite);
   font-family: $pacifico;
 }
-.textInfo{
+
+.textInfo {
   color: aqua;
 }
 
@@ -55,25 +56,27 @@
   margin-left: 25px;
 }
 
-.inputGroup{
+.inputGroup {
   display: flex;
   flex-direction: column;
-  label{
+
+  label {
     margin-bottom: .2em;
   }
-  input{
-    outline: none;
-  background: none;
-  border: 1px solid #485881;
-  font-size: 1.2em;
-  padding: .5em;
-  color: inherit;
-  border-radius: 5px;
-  margin-bottom: .2em;
-  &:focus{
-    border: 1px solid #6177ad;
-  }
-  }
-  
-}
 
+  input {
+    outline: none;
+    background: none;
+    border: 1px solid #485881;
+    font-size: 1.2em;
+    padding: .5em;
+    color: inherit;
+    border-radius: 5px;
+    margin-bottom: .2em;
+
+    &:focus {
+      border: 1px solid #6177ad;
+    }
+  }
+
+}

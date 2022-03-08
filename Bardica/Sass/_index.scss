@@ -2,34 +2,40 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-column-gap: 2em; 
+    grid-column-gap: 2em;
     transition: 0.5s;
-        article{
-            margin-left: 1em;
-            margin-top: 1em;
-            width: 40vh;
-            height: auto;
-            p{
-                max-width: 35vw;
-            }
-            img {
-                height: 100px;
-                width: auto;
-                transition: .5s;
-                &:hover{
-                    filter: brightness(50%);
-                }
-                @include phoneLarge{
-                    height: 120px;
-                }
-                @include tablet{
-                    height: 150px;
-                }
-                @include desktop{
-                    height: auto;
-                }
-            }
-        
+
+    article {
+        margin-left: 1em;
+        margin-top: 1em;
+        width: 40vh;
+        height: auto;
+
+        p {
+            max-width: 35vw;
         }
-    }   
-    
+
+        img {
+            height: 100px;
+            width: auto;
+            transition: .5s;
+
+            &:hover {
+                filter: brightness(50%);
+            }
+
+            @include phoneLarge {
+                height: 120px;
+            }
+
+            @include tablet {
+                height: 150px;
+            }
+
+            @include desktop {
+                height: auto;
+            }
+        }
+
+    }
+}

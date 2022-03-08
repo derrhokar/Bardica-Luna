@@ -8,9 +8,11 @@
 
 //Imports de los partials
 @import 'utilities';
-@media only screen and (max-width: 1079px){
+
+@media only screen and (max-width: 1079px) {
     @import 'navbar';
 }
+
 @import 'header';
 @import 'index';
 @import 'footer';
@@ -27,17 +29,20 @@ body {
     color: map-get($colores, textColor);
     font-size: 12px;
     @include fixedMargin(13vh, 16vh);
-    @include phoneLarge{
+
+    @include phoneLarge {
         font-size: 14px;
         @include fixedMargin(13vh, 10vh)
     }
-    @include tablet{
+
+    @include tablet {
         font-size: 15px;
     }
-    @include desktop{
-        font-size: 18px;  
+
+    @include desktop {
+        font-size: 18px;
     }
-   
+
 
     &::-webkit-scrollbar {
         width: 0.25rem;
@@ -65,24 +70,28 @@ ul {
 .mainContainer {
     margin: 0 auto;
     @include container(480px, 0 10px);
-    @include phoneLarge{
+
+    @include phoneLarge {
         @include container(768px, 0 40px);
     }
-    @include tablet{
+
+    @include tablet {
         @include container(1080px, 0 130px)
     }
-    @include desktop{
+
+    @include desktop {
         @include container(1440px, 0 150px)
     }
-  }
+}
 
-h1{
+h1 {
     text-align: center;
     color: map-get($colores, starkWhite);
     font-family: $courgette;
     font-size: 2em;
 }
-h2{
+
+h2 {
     @extend h1;
     border-top: 1px solid #aaa;
 }

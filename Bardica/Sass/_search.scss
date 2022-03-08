@@ -1,42 +1,51 @@
-#searchParameter{
-    ul{
+#searchParameter {
+    ul {
         margin-top: 1em;
         display: flex;
     }
-    p{
+
+    p {
         margin-right: 1em;
-        @include tablet{
+
+        @include tablet {
             margin-right: 2em;
         }
-    & :focus{
-        border-bottom: 3px solid #3b3b3b;
-    }    
+
+        & :focus {
+            border-bottom: 3px solid #3b3b3b;
+        }
     }
 }
-.searchResults{
-   font-size: 10px;
-   @include phoneLarge{
-       font-size: 1em;
-   }
-    article{
+
+.searchResults {
+    font-size: 10px;
+
+    @include phoneLarge {
+        font-size: 1em;
+    }
+
+    article {
         @include flexCenter;
         margin-top: 1.5em;
     }
-    img{
+
+    img {
         width: 50px;
         height: auto;
         margin-right: 1em;
-        @include phoneLarge{
+
+        @include phoneLarge {
             width: 65px;
         }
-        @include tablet{
+
+        @include tablet {
             width: 80px;
         }
     }
 }
 
-.artists{
-    img{
+.artists {
+    img {
         border-radius: 50%;
     }
 }
