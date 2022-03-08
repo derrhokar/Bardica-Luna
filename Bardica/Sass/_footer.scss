@@ -1,0 +1,62 @@
+footer {
+    height: 15vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: map-get($colores, strongBlack);
+    @include phoneLarge{
+        height: 11vh;
+    }
+    @include desktop{
+        height: 10vh;
+    }
+}
+
+.musicBar {
+    display: flex;
+    @include desktop{
+        justify-content: space-between;
+    }
+    .musicInfo {
+        display: flex;
+        margin-top: 5px;
+        img {
+            width: auto;
+            height: 30px;
+            margin-right: 1em;
+            @include phoneLarge{
+                height: 40px;
+            }
+        }
+
+        .musicDesc {
+            margin-right: 10px;
+            h4 {
+                color: map-get($colores, starkWhite);
+            }
+        }
+    }
+
+    .musicButtons {
+        @include flexCenter;
+        flex-grow: .5;
+        margin-top: 5px;
+        
+        ul {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+
+            i {
+                color: map-get($colores, starkWhite);
+            }
+            @include tablet{
+                margin-left: 20px;
+                justify-content: space-around;
+            }
+            
+        }
+
+    }
+}

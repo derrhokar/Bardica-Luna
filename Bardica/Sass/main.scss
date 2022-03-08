@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+//Imports de los partials
+@import 'utilities';
+@media only screen and (max-width: 1079px){
+    @import 'navbar';
+}
+@import 'header';
+@import 'index';
+@import 'footer';
+@import 'ambience';
+@import 'library';
+@import 'search';
+@import 'join';
+@import 'about';
+
+
+body {
+    background-color: map-get($colores, strongBlack);
+    font-family: $merienda;
+    color: map-get($colores, textColor);
+    font-size: 12px;
+    @include fixedMargin(13vh, 16vh);
+    @include phoneLarge{
+        font-size: 14px;
+        @include fixedMargin(13vh, 10vh)
+    }
+    @include tablet{
+        font-size: 15px;
+    }
+    @include desktop{
+        font-size: 18px;  
+    }
+   
+
+    &::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: map-get($colores, brightRed);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: map-get($colores, lightBlack);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colores, starkWhite);
+    font-family: $courgette;
+}
+
+ul {
+    list-style: none;
+}
+
+.mainContainer {
+    margin: 0 auto;
+    @include container(480px, 0 10px);
+    @include phoneLarge{
+        @include container(768px, 0 40px);
+    }
+    @include tablet{
+        @include container(1080px, 0 130px)
+    }
+    @include desktop{
+        @include container(1440px, 0 150px)
+    }
+  }
+
+h1{
+    text-align: center;
+    color: map-get($colores, starkWhite);
+    font-family: $courgette;
+    font-size: 2em;
+}
+h2{
+    @extend h1;
+    border-top: 1px solid #aaa;
+}

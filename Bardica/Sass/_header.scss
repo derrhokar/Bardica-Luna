@@ -1,0 +1,88 @@
+#mainHeader {
+    @include flexCenter;
+    height: 10vh;
+    background: linear-gradient(to bottom, map-get($colores, brightRed), map-get($colores, lightBlack));
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+
+.logo {
+    height: 24px;
+    width: auto;
+    @include tablet{
+        height: 40px;
+    }
+}
+
+#brand {
+    @include flexCenter;
+}
+
+#searchBar {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    transition: 0.5s;
+    width: 4rem;
+    border-radius: 40px;
+    &:hover{
+        color: map-get($colores, starkWhite)
+    }
+    @include phoneLarge{
+        font-size: 18px;
+        width: 60px
+    }
+}
+
+#connectivity {
+    ul {
+        @include flexCenter;
+        margin-right: 5px;
+    }
+
+    a {
+        color: inherit;
+        padding: 0.5rem;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    i {
+        font-size: 22px;
+        color: map-get($colores, starkWhite);
+    }
+}
+
+@include desktop{
+  .navbarContainer input{
+        display: none;
+    }
+    .brand{
+        order: 1;
+    }
+    .menuItems{
+        display: flex;
+        order: 2;
+        width: 400px;
+        justify-content: space-between;
+        @include desktop{
+         width: 600px;           
+        }
+    }
+    #bar{
+        order: 3;
+    
+    }
+    #connectivity{
+        order: 4;
+    }
+    
+}
+  
+  

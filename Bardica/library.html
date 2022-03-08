@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='keywords' content="Bandas, Música, Librería, Listas de reproducción">
+  <meta name="description" content="Accede a tu música y organizala de forma simple y rápida.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bárdica-Librería </title>
+  <link rel="shortcut icon" href="Assets/Hurd.ico" type="image/x-icon">
+  <link href="Styles/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/04883203e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <!-- Logo de la página -->
+    <a href="index.html" id="brand">
+      <img class="logo" src="Assets/hurd.ico" alt="Logo del sitio">
+      <div class="">Bárdica</div>
+    </a>
+    <!-- Barra de búsqueda de canciones o artistas -->
+    <form id="bar" action="search.html">
+      <a class="">
+        <i class="fas fa-search" id="magnifier"></i>
+        <input id="searchBar" name='buscar' placeholder="Buscar" type="text">
+      </a>
+    </form>
+    <!-- Sector de conectividad-->
+    <div id="connectivity">  
+      <a href="#"><i class="fab fa-chromecast"></i></a></li>   
+    </div>
+    <nav id="navbar">
+      <div class="navbarContainer">
+          <input type="checkbox" name="" id="">
+          <div class="hamburgerLines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menuItems">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Biblioteca</a></li>
+              <li><a href="ambience.html">Ambientar</a></li>
+              <li><a href="join.html">Únete</a></li>
+              <li><a href="about.html">Sobre nosotros</a></li>
+          </ul>
+      </div>
+  </nav>
+  </header>
+  <main class="mainContainer">
+    <section>
+      <!-- Esta section incluye 4 cards ordenadas en 2x2 -->
+      <h1 class="">Actividad Reciente</h1>
+      <div class="musicCards">
+        <article>
+          <a href="#">
+            <img src="Assets/mester-de-juglaria.jpg" alt="Disco Mester de Juglaria">
+            <h3 class="subtitle">Mester de Juglaría</h3>
+          </a>
+          <p><a href="#">Saurom</a>-1M de visitas</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/aeterna.jpg" alt="Disco Легенда Начинается">
+            <h3 class="subtitle">Folk Metal Mix</h3>
+          </a>
+          <p>Aeterna, Storm Seeker, Nordheim...</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/in-waves.jpg" alt="Disco In Waves">
+            <h3 class="subtitle">In Waves</h3>
+          </a>
+          <p><a href="#">Trivium</a>-10 M de visitas</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/dusk-of-the-ages.jpg" alt="Disco Dusk of the Ages">
+            <h3 class="subtitle">Dusk of the Ages</h3>
+          </a>
+          <p><a href="#">Furor Gallico</a>-2M de visitas</p>
+        </article>
+      </div>
+    </section>
+    <section>
+      <article class="libraryMenu">
+        <!-- El menú permitiría al usuario revisar las diferentes categorías que almacenó en su biblioteca -->
+        <ul class="">
+          <li>
+            <p><a href="#">Canciones</a></p>
+          </li>
+          <li>
+            <p><a href="#">Álbumes</a></p>
+          </li>
+          <li>
+            <p><a href="#">Artistas</a></p>
+          </li>
+          <li>
+            <p><a href="#">Suscripciones</a></p>
+          </li>
+        </ul>
+
+      </article>
+    </section>
+    <div class="orderButton">
+      <!-- El menú permitiría filtrar los resultados dependiendo de lo que decida el usuario -->
+      <select name="order">
+        <option value="added">Agregados recientemente</option>
+        <option value="a-z">De la A a la Z</option>
+        <option value="z-a">De la Z a la A</option>
+      </select>
+    </div>
+  </main>
+  <footer class="">
+    <!-- La barra de música tiene un estilado separado de la barra inferior -->
+    <div class="musicBar mainContainer">
+      <div class=" musicInfo">
+        <!-- musicInfo incluye la imágen del tema actual, el nombre y el artista -->
+        <img src="Assets/Ys.jpg" alt="Disco YS IX Ultimate">
+        <div class="musicDesc">
+          <h4>Norse Wind</h4>
+          <p>Falcom Sound Team</p>
+        </div>
+      </div>
+      <!-- Estos son los botones para controlar la reproducción de la música -->
+      <div class="musicButtons ">
+        <ul class="">
+          <li>
+            <i class="fas fa-step-backward"></i>
+          </li>
+          <li>
+            <i class="fas fa-play"></i>
+          </li>
+          <li>
+            <i class="fas fa-step-forward"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- La barra de navegación incluye todos los hipervínculos, y se posiciona a la izquierda del main en
+      formato desktop -->
+  </footer>
+</body>
+<script src="/Script/script.js"></script>
+</html>

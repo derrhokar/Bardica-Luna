@@ -1,0 +1,47 @@
+//Mapa de colores
+$colores: (strongBlack: #030303, starkWhite:#fff, lightBlack: #282828, brightRed: #FF0000, textColor: #888888);
+//Import de las fuentes
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mea+Culpa&family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mea+Culpa&family=Merienda:wght@700&family=Pacifico&display=swap');
+//Variables, para llamar a las fuentes de forma más simple.
+$merienda: 'Merienda',
+bold;
+$courgette: 'Courgette',
+cursive;
+$pacifico: 'Pacifico', cursive;
+//Mixin con los media query
+@mixin phoneLarge {
+    @media only screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1080px) {
+        @content;
+    }
+}
+
+//Mixin para centrar elementos flex
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+//Mixin para ajustar el body con respecto a los elementos fijos
+@mixin fixedMargin($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+//Mixin para centrar elementos
+@mixin container($width, $padding){
+    max-width: $width;
+    padding: $padding;
+}

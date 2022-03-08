@@ -1,0 +1,27 @@
+.libraryMenu{
+    border-bottom: 1px solid map-get($colores, starkWhite); 
+    ul{
+        display: flex; 
+        @include phoneLarge{
+           justify-content: space-between;
+        }
+    }
+
+    p{
+        padding-right: 1em;
+    & :focus{
+        border-bottom: 3px solid #3b3b3b;
+    }
+    }
+}
+
+.orderButton{
+    margin-top: 1em;
+    select{
+        border-radius: 30px;
+        background-color: #3b3b3b;
+        color: map-get($colores, starkWhite);
+        height: 2em;
+        margin-bottom: 20px;
+    }
+}

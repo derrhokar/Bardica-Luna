@@ -1,0 +1,79 @@
+.contactMain {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.joinText {
+  color: map-get($colores, starkWhite);
+  font-family: $pacifico;
+}
+.textInfo{
+  color: aqua;
+}
+
+.contactForm {
+  background-color: #363642;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: map-get($colores, starkWhite);
+}
+
+.btn {
+  color: map-get($colores, starkWhite);
+  background-color: #013549;
+  padding: .7rem 1.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-size: .8rem;
+  outline: none;
+  border: none;
+  opacity: 0.5;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 1;
+    background-color: #003e57;
+  }
+
+  span {
+    transition: 0.5s;
+
+    &::after {
+      content: '\279C';
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+  margin-left: 25px;
+}
+
+.inputGroup{
+  display: flex;
+  flex-direction: column;
+  label{
+    margin-bottom: .2em;
+  }
+  input{
+    outline: none;
+  background: none;
+  border: 1px solid #485881;
+  font-size: 1.2em;
+  padding: .5em;
+  color: inherit;
+  border-radius: 5px;
+  margin-bottom: .2em;
+  &:focus{
+    border: 1px solid #6177ad;
+  }
+  }
+  
+}
+

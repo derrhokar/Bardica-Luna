@@ -1,0 +1,42 @@
+#searchParameter{
+    ul{
+        margin-top: 1em;
+        display: flex;
+    }
+    p{
+        margin-right: 1em;
+        @include tablet{
+            margin-right: 2em;
+        }
+    & :focus{
+        border-bottom: 3px solid #3b3b3b;
+    }    
+    }
+}
+.searchResults{
+   font-size: 10px;
+   @include phoneLarge{
+       font-size: 1em;
+   }
+    article{
+        @include flexCenter;
+        margin-top: 1.5em;
+    }
+    img{
+        width: 50px;
+        height: auto;
+        margin-right: 1em;
+        @include phoneLarge{
+            width: 65px;
+        }
+        @include tablet{
+            width: 80px;
+        }
+    }
+}
+
+.artists{
+    img{
+        border-radius: 50%;
+    }
+}

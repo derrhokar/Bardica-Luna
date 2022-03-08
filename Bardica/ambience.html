@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='keywords' content="Música, Música ambiental, Efectos, Sonidos">
+  <meta name="description"
+    content="La nueva función ambientar de Bárdica te permite ambientar y dar efectos de sonido a tu vida.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bárdica-Ambienta </title>
+  <link rel="shortcut icon" href="Assets/Hurd.ico" type="image/x-icon">
+  <link href="Styles/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/04883203e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <!-- Logo de la página -->
+    <a href="index.html" id="brand">
+      <img class="logo" src="Assets/hurd.ico" alt="Logo del sitio">
+      <div class="">Bárdica</div>
+    </a>
+    <!-- Barra de búsqueda de canciones o artistas -->
+    <form id="bar" action="search.html">
+      <a class="">
+        <i class="fas fa-search" id="magnifier"></i>
+        <input id="searchBar" name='buscar' placeholder="Buscar" type="text">
+      </a>
+    </form>
+    <!-- Sector de conectividad-->
+    <div id="connectivity">
+        <a href="#"><i class="fab fa-chromecast"></i></a></li>    
+    </div>
+    <nav id="navbar">
+      <div class="navbarContainer">
+          <input type="checkbox" name="" id="">
+          <div class="hamburgerLines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menuItems">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="library.html">Biblioteca</a></li>
+              <li><a href="#">Ambientar</a></li>
+              <li><a href="join.html">Únete</a></li>
+              <li><a href="about.html">Sobre nosotros</a></li>
+          </ul>
+      </div>
+  </header>
+  <main class="mainContainer">
+    <section>
+      <!-- El texto está animado para reproducir un ciclo de diferentes colores -->
+      <h1>Ambientar</h1>
+      <p id="centeredText">¿Sos el anfitrión de una caza del tesoro? ¿O DM de tu partida de
+        rol?
+        Tené a la mano listas de reproducción temáticas o efectos de sonido para cada ocasión.
+      </p>
+      <h2 class="">Partidas de Rol</h2>
+      <div class="musicCards">
+        <!-- Cada section incluye 4 cards ordenadas en 2x2 -->
+        <article>
+          <a href="#">
+            <img src="Assets/Skyrim.jpg" alt="Disco Skyrim Ost">
+            <h3 class="subtitle">Entrando al Calabozo</h3>
+          </a>
+          <p>Para ambientar cuevas y calabozos</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/D&D.jpg" alt="Disco Midnight Syndicate">
+            <h3 class="subtitle">Tiren Iniciativa</h3>
+          </a>
+          <p>Para todo tipo de batallas</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/witcher.jpg" alt="Disco Witcher 3 Ost">
+            <h3 class="subtitle">El Overworld</h3>
+          </a>
+          <p>Para esos largos viajes a caballo</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/Baldur.jpg" alt="Disco Baldur's Gate Ost">
+            <h3 class="subtitle">Misiones y Shopping</h3>
+          </a>
+          <p>Para tu tiempo en ciudades y pueblos</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+
+      <h2 class="">Efectos de Sonido</h2>
+      <div class="musicCards">
+
+        <article>
+          <a href="#">
+            <img src="Assets/fight.jpg" alt="Pathfinder Combat">
+            <h3 class="subtitle">Efectos de Combate</h3>
+          </a>
+          <p>Espadas, conjuros y golpes</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/landscape.jpg" alt="Sonidos de Ambiente">
+            <h3 class="subtitle">Sonidos Ambientales</h3>
+          </a>
+          <p>Lluvia, pisadas y demás</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/tavern.jpg" alt="En la Taberna">
+            <h3 class="subtitle">En la Taberna</h3>
+          </a>
+          <p>Música, conversaciones y cánticos</p>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="Assets/Dungeon.jpg" alt="En el Calabozo">
+            <h3 class="subtitle">En el Calabozo</h3>
+          </a>
+          <p>Puertas, eco y conversaciones distantes</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="">
+    <!-- La barra de música tiene un estilado separado de la barra inferior -->
+    <div class="musicBar mainContainer">
+      <div class=" musicInfo">
+        <!-- musicInfo incluye la imágen del tema actual, el nombre y el artista -->
+        <img src="Assets/Ys.jpg" alt="Disco YS IX Ultimate">
+        <div class="musicDesc">
+          <h4>Norse Wind</h4>
+          <p>Falcom Sound Team</p>
+        </div>
+      </div>
+      <!-- Estos son los botones para controlar la reproducción de la música -->
+      <div class="musicButtons ">
+        <ul class="">
+          <li>
+            <i class="fas fa-step-backward"></i>
+          </li>
+          <li>
+            <i class="fas fa-play"></i>
+          </li>
+          <li>
+            <i class="fas fa-step-forward"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="/Script/script.js"></script>
+</html>
