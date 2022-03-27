@@ -2,15 +2,15 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-column-gap: 2em;
+    grid-column-gap: 5em;
     transition: 0.5s;
+    justify-content: center;
 
     article {
         margin-left: 1em;
         margin-top: 1em;
-        width: 40vh;
+        width: 30vw;
         height: auto;
-
         p {
             max-width: 35vw;
         }
@@ -38,4 +38,11 @@
         }
 
     }
+}
+section{
+    margin-bottom: 1em;
+}
+#siteDesc{
+    text-align: center;
+    color: map-get($colores, starkWhite);
 }

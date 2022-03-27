@@ -1,7 +1,7 @@
 #centeredText {
   font-size: 0.8em;
   animation: color 10s linear alternate infinite;
-
+  text-align: center;
   @include phoneLarge {
     font-size: 1.2em;
   }

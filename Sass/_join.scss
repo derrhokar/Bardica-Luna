@@ -16,10 +16,18 @@
 
 .contactForm {
   background-color: #363642;
-  width: 100%;
-  padding: 1rem 2rem;
+  width: 90%;
+  padding: 2rem 2rem;
   border-radius: 30px;
   color: map-get($colores, starkWhite);
+  margin: 0 auto;
+  @include tablet{
+    width: 70%;
+    height: 300px;
+  }
+  @include desktop{
+    height: 350px;
+  }
 }
 
 .btn {
@@ -33,7 +41,7 @@
   border: none;
   opacity: 0.5;
   transition: 0.5s;
-
+  margin-top: .7em;
   &:hover {
     opacity: 1;
     background-color: #003e57;
@@ -59,7 +67,7 @@
 .inputGroup {
   display: flex;
   flex-direction: column;
-
+  
   label {
     margin-bottom: .2em;
   }
@@ -79,4 +87,28 @@
     }
   }
 
+}
+
+.serviceDesc{
+  .joinTitle{
+    text-align: center;
+    color: map-get($colores, starkWhite);
+    font-family: $courgette;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    @include tablet{
+      font-size: 1.5em;
+    }
+  }
+  .joinList{
+    font-size: .8em;
+    list-style: square;
+    @include tablet{
+      font-size: 1em;
+    }
+    li{
+      margin-bottom: .5em;
+      margin-left: 1.5em;
+    }
+  }
 }

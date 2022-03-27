@@ -1,4 +1,5 @@
 #searchParameter {
+    margin-left: 1em;
     ul {
         margin-top: 1em;
         display: flex;
@@ -19,7 +20,6 @@
 
 .searchResults {
     font-size: 10px;
-
     @include phoneLarge {
         font-size: 1em;
     }
@@ -27,6 +27,7 @@
     article {
         @include flexCenter;
         margin-top: 1.5em;
+        margin-left: 1.5em;
     }
 
     img {

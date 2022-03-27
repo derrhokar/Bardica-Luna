@@ -313,15 +313,18 @@
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  grid-column-gap: 2em;
+  grid-column-gap: 5em;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .musicCards article {
   margin-left: 1em;
   margin-top: 1em;
-  width: 40vh;
+  width: 30vw;
   height: auto;
 }
 
@@ -359,6 +362,15 @@
   }
 }
 
+section {
+  margin-bottom: 1em;
+}
+
+#siteDesc {
+  text-align: center;
+  color: #fff;
+}
+
 footer {
   height: 15vh;
   position: fixed;
@@ -386,6 +398,14 @@ footer {
   display: flex;
 }
 
+@media only screen and (min-width: 768px) {
+  .musicBar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media only screen and (min-width: 1080px) {
   .musicBar {
     -webkit-box-pack: justify;
@@ -399,6 +419,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
+  margin-left: 2em;
 }
 
 .musicBar .musicInfo img {
@@ -462,6 +483,7 @@ footer {
   font-size: 0.8em;
   -webkit-animation: color 10s linear alternate infinite;
           animation: color 10s linear alternate infinite;
+  text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
@@ -580,6 +602,10 @@ footer {
   margin-bottom: 20px;
 }
 
+#searchParameter {
+  margin-left: 1em;
+}
+
 #searchParameter ul {
   margin-top: 1em;
   display: -webkit-box;
@@ -619,6 +645,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1.5em;
+  margin-left: 1.5em;
 }
 
 .searchResults img {
@@ -665,10 +692,24 @@ footer {
 
 .contactForm {
   background-color: #363642;
-  width: 100%;
-  padding: 1rem 2rem;
+  width: 90%;
+  padding: 2rem 2rem;
   border-radius: 30px;
   color: #fff;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .contactForm {
+    width: 70%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .contactForm {
+    height: 350px;
+  }
 }
 
 .btn {
@@ -683,6 +724,7 @@ footer {
   opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: .7em;
 }
 
 .btn:hover {
@@ -737,6 +779,36 @@ footer {
   border: 1px solid #6177ad;
 }
 
+.serviceDesc .joinTitle {
+  text-align: center;
+  color: #fff;
+  font-family: "Courgette", cursive;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .serviceDesc .joinTitle {
+    font-size: 1.5em;
+  }
+}
+
+.serviceDesc .joinList {
+  font-size: .8em;
+  list-style: square;
+}
+
+@media only screen and (min-width: 768px) {
+  .serviceDesc .joinList {
+    font-size: 1em;
+  }
+}
+
+.serviceDesc .joinList li {
+  margin-bottom: .5em;
+  margin-left: 1.5em;
+}
+
 .aboutMain h1, .aboutMain h2 {
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #fff), color-stop(#030303), color-stop(20%, #fff));
@@ -746,6 +818,22 @@ footer {
           animation: shine 3s infinite linear;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.aboutMain h2 {
+  padding-top: .5em;
+}
+
+.aboutMain h3 {
+  margin-bottom: 1em;
+}
+
+.aboutMain .quote {
+  color: #fff;
+}
+
+.aboutMain p {
+  padding-bottom: .6em;
 }
 
 @-webkit-keyframes shine {
@@ -828,10 +916,10 @@ footer {
       background-position: 0px;
     }
     60% {
-      background-position: 300px;
+      background-position: 400px;
     }
     100% {
-      background-position: 500px;
+      background-position: 700px;
     }
   }
   @keyframes shine {
@@ -839,10 +927,10 @@ footer {
       background-position: 0px;
     }
     60% {
-      background-position: 300px;
+      background-position: 400px;
     }
     100% {
-      background-position: 500px;
+      background-position: 700px;
     }
   }
 }
@@ -865,14 +953,19 @@ footer {
 
 @media only screen and (min-width: 480px) {
   .paragraph {
-    font-size: .8em;
+    font-size: 1.1em;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   .paragraph {
-    font-size: 1em;
+    font-size: 1.2em;
   }
+}
+
+.imageContainer {
+  margin-right: .5em;
+  margin-left: .5em;
 }
 
 .imageContainer p {
@@ -894,14 +987,14 @@ footer {
 }
 
 .imageContainer img {
-  margin-left: .5em;
-  width: 50%;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 @media only screen and (min-width: 768px) {
   .imageContainer img {
     width: 300px;
+    height: 300px;
     margin-left: 1em;
   }
 }
@@ -909,6 +1002,7 @@ footer {
 @media only screen and (min-width: 1080px) {
   .imageContainer img {
     width: 350px;
+    height: 350px;
   }
 }
 
@@ -925,7 +1019,7 @@ body {
   body {
     font-size: 14px;
     margin-top: 13vh;
-    margin-bottom: 10vh;
+    margin-bottom: 12vh;
   }
 }
 
@@ -965,29 +1059,6 @@ ul {
 
 .mainContainer {
   margin: 0 auto;
-  max-width: 480px;
-  padding: 0 10px;
-}
-
-@media only screen and (min-width: 480px) {
-  .mainContainer {
-    max-width: 768px;
-    padding: 0 40px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .mainContainer {
-    max-width: 1080px;
-    padding: 0 130px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .mainContainer {
-    max-width: 1440px;
-    padding: 0 150px;
-  }
 }
 
 h1, h2 {

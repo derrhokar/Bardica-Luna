@@ -32,7 +32,7 @@ body {
 
     @include phoneLarge {
         font-size: 14px;
-        @include fixedMargin(13vh, 10vh)
+        @include fixedMargin(13vh, 12vh)
     }
 
     @include tablet {
@@ -69,19 +69,7 @@ ul {
 
 .mainContainer {
     margin: 0 auto;
-    @include container(480px, 0 10px);
-
-    @include phoneLarge {
-        @include container(768px, 0 40px);
-    }
-
-    @include tablet {
-        @include container(1080px, 0 130px)
-    }
-
-    @include desktop {
-        @include container(1440px, 0 150px)
-    }
+    
 }
 
 h1 {
@@ -95,3 +83,4 @@ h2 {
     @extend h1;
     border-top: 1px solid #aaa;
 }
+

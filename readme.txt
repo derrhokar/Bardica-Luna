@@ -1,0 +1,1 @@
+Bárdica es un proyecto de una web estática realizada en html,css y scss que simula la interfaz de un sitio de almacenamiento y reproducción de música en la nube.

@@ -17,7 +17,9 @@ footer {
 
 .musicBar {
     display: flex;
-
+    @include tablet{
+        justify-content: center;
+    }
     @include desktop {
         justify-content: space-between;
     }
@@ -25,7 +27,7 @@ footer {
     .musicInfo {
         display: flex;
         margin-top: 5px;
-
+        margin-left: 2em;
         img {
             width: auto;
             height: 30px;
